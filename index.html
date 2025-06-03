@@ -9,8 +9,5 @@
 </iframe>
 
   <script>
-    $(window).resize(function(){
-var window_width = $(window).width();
-$('iframe').width(window_width);
-});
+$( '#iframe' ).attr( 'src', function ( i, val ) { return val; });
   </script>
